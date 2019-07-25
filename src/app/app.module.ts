@@ -11,12 +11,20 @@ import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolb
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarEditComponent } from './car-edit/car-edit.component';
 import { FormsModule } from '@angular/forms';
+import { OwnerListComponent } from './owner-list/owner-list.component';
+import { OwnercarListComponent } from './ownercar-list/ownercar-list.component';
+import { EditCarComponent } from './edit-car/edit-car.component';
+import { OwnerComponent } from './owner/owner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarListComponent,
-    CarEditComponent
+    CarEditComponent,
+    OwnerListComponent,
+    OwnercarListComponent,
+    EditCarComponent,
+    OwnerComponent
   ],
   imports: [
     BrowserModule,
