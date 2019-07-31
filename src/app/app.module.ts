@@ -15,6 +15,8 @@ import { OwnerListComponent } from './owner-list/owner-list.component';
 import { OwnercarListComponent } from './ownercar-list/ownercar-list.component';
 import { EditCarComponent } from './edit-car/edit-car.component';
 import { OwnerComponent } from './owner/owner.component';
+import { CarsownerListComponent } from './carsowner-list/carsowner-list.component';
+import { OwnerEditComponent } from './owner-edit/owner-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { OwnerComponent } from './owner/owner.component';
     OwnerListComponent,
     OwnercarListComponent,
     EditCarComponent,
-    OwnerComponent
+    OwnerComponent,
+    CarsownerListComponent,
+    OwnerEditComponent
   ],
   imports: [
     BrowserModule,

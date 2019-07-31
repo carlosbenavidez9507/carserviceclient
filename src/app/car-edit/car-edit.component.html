@@ -10,11 +10,24 @@
                  required name="name" #name>
         </mat-form-field>
       </mat-card-content>
+
+
+      <mat-card-content>
+        <input type="hidden" >
+        <mat-form-field>
+          <input matInput placeholder="DNI cliente" [(ngModel)]="car.ownerDni"
+                 required name="ownerDni" #name>
+        </mat-form-field>
+      </mat-card-content>
+
+
       <mat-card-actions>
         <button mat-raised-button color="primary" type="submit"
                 [disabled]="!carForm.form.valid">Save</button>
         <button mat-raised-button color="secondary" (click)="remove(car.href)"
                 *ngIf="car.href" type="button">Delete</button>
+
+            
         <a mat-button routerLink="/car-list">Cancel</a>
       </mat-card-actions>
       <mat-card-footer>

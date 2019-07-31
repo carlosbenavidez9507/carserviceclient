@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {OwnerService} from '../shared/car/owner.service'
-//import { OwnerComponent } from '../owner/owner.component';
+import { OwnerComponent } from '../owner/owner.component';
 
 
 @Component({
@@ -15,6 +15,7 @@ export class OwnerListComponent implements OnInit {
   ngOnInit() {
 
     this.ownerService.getAll().subscribe(data => {
+      console.log(data._embedded.owners);
       this.owners = data._embedded.owners;
      
     });
